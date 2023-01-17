@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Generation</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="body">
+	<div class="container">
+		<div class="mask-image">
+			<img src="img/main.png" width="573" height="385" alt="">
+		</div>
+		<div class="mask-image">
+			<img src="img/main.png" width="573" height="385" alt="">
+		</div>
+
+		<div class="mask-image">
+			<img src="img/main.png" width="573" height="385" alt="">
+		</div>
+		<div class="mask-image">
+			<img src="img/main.png" width="573" height="385" alt="">
+		</div>
+		<svg width="573" height="385" viewBox="0 0 573 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M572.932 385.145L114.794 385.145C114.794 311.325 95.5907 278.999 68.9178 234.296C38.2601 182.809 0.0845694 118.753 0.0845642 0.0288086L458.261 0.0288015C458.261 73.8868 477.464 106.214 504.156 150.916C534.823 202.432 572.932 266.421 572.932 385.145Z"
+				fill="black" />
+		</svg>
+		<div class="accordion-item">
+			<div class="accordion-head">
+				Head 1
+			</div>
+			<div class="accordion-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora facere vero soluta quas, atque
+				temporibus ipsa debitis omnis maiores, ex suscipit odio inventore sed reprehenderit commodi? Deserunt,
+				adipisci ea?
+			</div>
+		</div>
+		<div class="accordion-item">
+			<div class="accordion-head">
+				Head 2
+			</div>
+			<div class="accordion-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora facere vero soluta quas, atque
+				temporibus ipsa debitis omnis maiores, ex suscipit odio inventore sed reprehenderit commodi? Deserunt,
+				adipisci ea?
+			</div>
+		</div>
+		<div class="accordion-item">
+			<div class="accordion-head">
+				Head 1
+			</div>
+			<div class="accordion-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora facere vero soluta quas, atque
+				temporibus ipsa debitis omnis maiores, ex suscipit odio inventore sed reprehenderit commodi? Deserunt,
+				adipisci ea?
+			</div>
+		</div>
+		<div class="wrap">
+			<span class="h1"></span>
+			<span class="h2"></span>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+
+	<script>
+		$('.accordion-item').mouseenter(function () {
+			var item = $(this).find('.accordion-body');
+			setTimeout(function () {
+				item.slideDown().siblings('.accordion-body').slideUp()
+			}, 300)
+		})
+		$('.accordion-item').mouseleave(function () {
+			var item = $(this).find('.accordion-body');
+			setTimeout(function () {
+				item.slideUp();
+			}, 300)
+		})
+	</script>
+</body>
+
+</html>
